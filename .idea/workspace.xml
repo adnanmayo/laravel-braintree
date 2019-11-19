@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="">
+    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="addded return statement in the function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/SubscribeUserCommand.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/SubscribeUserCommand.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +153,7 @@
       <updated>1574150399708</updated>
       <workItem from="1574150401005" duration="3878000" />
       <workItem from="1574155050432" duration="17910000" />
-      <workItem from="1574177321014" duration="1913000" />
+      <workItem from="1574177321014" duration="4834000" />
     </task>
     <task id="LOCAL-00001" summary="Updated migrations a redirected user to home when subscritpion is created">
       <created>1574167737784</created>
@@ -204,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1574179076059</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="addded return statement in the function">
+      <created>1574179663601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574179663601</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Refactored the code">
+      <created>1574180992236</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1574180992236</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +245,8 @@
     <MESSAGE value="Added a next billing date" />
     <MESSAGE value="Fixed subcription cancel" />
     <MESSAGE value="Fixed query for middleware" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed query for middleware" />
+    <MESSAGE value="addded return statement in the function" />
+    <MESSAGE value="Refactored the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored the code" />
   </component>
 </project>

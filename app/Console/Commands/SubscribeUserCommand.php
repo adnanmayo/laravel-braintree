@@ -47,6 +47,7 @@ class SubscribeUserCommand extends Command
 
         foreach ($users as $user) {
 
+            sleep(35);
             $this->chargeUser($user, 150);
 
         }
@@ -60,11 +61,9 @@ class SubscribeUserCommand extends Command
     {
 
         try {
-            $charge = $user->charge($amount, [
-                'recurring' => false
-            ]);
-
+            $charge = $user->charge($amount);
             $this->creatPayments($user, $amount);
+
         } catch (\Exception $exception) {
             $user->subscribed_at = null;
             $user->update();
