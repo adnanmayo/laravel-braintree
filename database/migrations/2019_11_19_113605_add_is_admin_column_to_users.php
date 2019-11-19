@@ -15,7 +15,7 @@ class AddIsAdminColumnToUsers extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->boolean('is_admin');
+            $table->boolean('is_admin')->nullable();
         });
     }
 

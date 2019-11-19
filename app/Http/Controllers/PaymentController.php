@@ -20,13 +20,24 @@ class PaymentController extends Controller
         /** @var User $user */
         $user = $request->user();
 
-        $customer = $user->createAsBraintreeCustomer($request->nonce);
-        $charge = $user->charge(200,
-            [
-                'recurring' => false
-            ]);
+        try{
 
+            $customer = $user->createAsBraintreeCustomer($request->nonce);
+            $charge = $user->charge(200,
+                [
+                    'recurring' => false
+                ]);
+            $this->createPaymentRecord($user, 200);
+            $this->updateUser($user);
 
+            session()->flash('status', 'Subscribed successfully');
+
+            return redirect()->route('home');
+
+        }catch (\Exception $exception){
+
+            return redirect()->route('home');
+        }
     }
 
     /**
