@@ -25,10 +25,11 @@ class SubscriptionController extends Controller
         $user = $request->user();
 
         $user->braintree_id = null;
+        $user->subcribed_at = null;
         $user->update();
 
         session()->flash('status', 'successfully cancelled');
 
-        return redirect()->route('home');
+        return redirect()->route('subscription.create');
     }
 }
