@@ -35,6 +35,7 @@ class PaymentController extends Controller
             return redirect()->route('home');
 
         }catch (\Exception $exception){
+            session()->flash('status', 'There is an error occurred while subscribing');
 
             return redirect()->route('home');
         }
