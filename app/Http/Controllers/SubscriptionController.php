@@ -24,7 +24,6 @@ class SubscriptionController extends Controller
     {
         $user = $request->user();
 
-        $user->braintree_id = null;
         $user->subscribed_at = null;
         $user->update();
 

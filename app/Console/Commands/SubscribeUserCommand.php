@@ -41,7 +41,7 @@ class SubscribeUserCommand extends Command
         $previousMonthDate = now()->subMonth();
 
         $users = User::query()->whereNotNull('braintree_id')
-            ->whereRaw('NOW() > ( subscribed_at + INTERVAL 1 MONTH)')
+//            ->whereRaw('NOW() > ( subscribed_at + INTERVAL 1 MONTH)')
             ->get();
         /** @var User $user */
 
@@ -66,7 +66,6 @@ class SubscribeUserCommand extends Command
 
             $this->creatPayments($user, $amount);
         } catch (\Exception $exception) {
-            $user->braintree_id = null;
             $user->subscribed_at = null;
             $user->update();
         }
