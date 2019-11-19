@@ -53,7 +53,7 @@ class User extends Authenticatable
     {
         return $this->newQuery()
             ->whereNotNull('braintree_id')
-            ->whereRaw('subscribed_at >  NOW() - INTERVAL 30 DAY')
+            ->whereRaw('NOW() < ( subscribed_at + INTERVAL 1 MONTH)')
             ->first();
     }
 

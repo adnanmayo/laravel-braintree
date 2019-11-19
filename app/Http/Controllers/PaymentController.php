@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 
 class PaymentController extends Controller
@@ -13,6 +14,7 @@ class PaymentController extends Controller
      * Process the payment
      *
      * @param Request $request
+     * @return RedirectResponse
      * @throws \Exception
      */
     public function process(Request $request)

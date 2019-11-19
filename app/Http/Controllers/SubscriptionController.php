@@ -13,4 +13,22 @@ class SubscriptionController extends Controller
                 'token' => \Braintree\ClientToken::generate()
             ]);
     }
+
+    /**
+     * Cancel the subscription
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function cancel(Request $request)
+    {
+        $user = $request->user();
+
+        $user->braintree_id = null;
+        $user->update();
+
+        session()->flash('status', 'successfully cancelled');
+
+        return redirect()->route('home');
+    }
 }

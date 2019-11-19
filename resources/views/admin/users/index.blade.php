@@ -18,7 +18,8 @@
                             <thead>
                             <th> Email</th>
                             <th> Brain Tree ID</th>
-                            <th> Pas Payments</th>
+                            <th> Next subscription Date</th>
+                            <th> Past Payments</th>
                             </thead>
                             <tbody>
 
@@ -33,10 +34,19 @@
                                     </td>
 
                                     <td>
+                                        @if ($user->subscribed_at)
+
+                                            {{$user->subscribed_at->addMonth(1) ?? 'N/A'}}
+                                        @else
+                                            {{'N/A'}}
+                                        @endif
+                                    </td>
+
+                                    <td>
                                         @foreach($user->payments as $payment)
                                             Date: {{ $payment->created_at }}
                                             Amount: {{ $payment->amount }}
-                                            <br />
+                                            <br/>
                                         @endforeach
                                     </td>
                                 </tr>

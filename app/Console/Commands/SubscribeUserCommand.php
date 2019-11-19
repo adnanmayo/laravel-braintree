@@ -38,10 +38,15 @@ class SubscribeUserCommand extends Command
      */
     public function handle()
     {
+        $previousMonthDate = now()->subMonth();
+
         $users = User::query()->whereNotNull('braintree_id')
-            ->whereRaw(' subscribed_at > NOW() - INTERVAL 30 DAY')
-            ->get();
+            ->whereRaw('NOW() > ( subscribed_at + INTERVAL 1 MONTH)')
+            ->toSql();
         /** @var User $user */
+
+        dd($users);
+
         foreach ($users as $user) {
 
             $this->chargeUser($user, 150);
