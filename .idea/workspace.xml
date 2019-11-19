@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/composerJson.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="Added error message">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574150399708</updated>
       <workItem from="1574150401005" duration="3878000" />
-      <workItem from="1574155050432" duration="10483000" />
+      <workItem from="1574155050432" duration="17494000" />
     </task>
     <task id="LOCAL-00001" summary="Updated migrations a redirected user to home when subscritpion is created">
       <created>1574167737784</created>
@@ -163,7 +161,28 @@
       <option name="project" value="LOCAL" />
       <updated>1574167737784</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added error message">
+      <created>1574167799897</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574167799897</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed date issue and cancel subcriptions">
+      <created>1574174411259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1574174411259</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Fixed subscription cancelled">
+      <created>1574175106097</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574175106097</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,6 +201,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Updated migrations a redirected user to home when subscritpion is created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated migrations a redirected user to home when subscritpion is created" />
+    <MESSAGE value="Added error message" />
+    <MESSAGE value="Fixed date issue and cancel subcriptions" />
+    <MESSAGE value="Fixed subscription cancelled" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed subscription cancelled" />
   </component>
 </project>

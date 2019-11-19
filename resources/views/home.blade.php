@@ -27,6 +27,15 @@
 
                             @endif
                         </div>
+
+                        @if (auth()->user()->subscribed_at)
+
+
+                            <div class="row">
+
+                                <b> Next Billing Date </b>: {{  auth()->user()->subscribed_at->addMonth()  }}
+                            </div>
+                        @endif
                         <div class="row">
 
                             You are logged in!
