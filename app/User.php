@@ -51,7 +51,7 @@ class User extends Authenticatable
 
     public function isSubscribed()
     {
-        $query =  $this->newQuery()
+        return $this->newQuery()
             ->whereNotNull('braintree_id')
             ->where('id', $this->id)
             ->whereRaw('NOW() < ( subscribed_at + INTERVAL 1 MONTH)')
