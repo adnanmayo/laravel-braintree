@@ -43,6 +43,9 @@
 
                                 You are logged in!
                             </div>
+                            <div class="row">
+                                <a href="{{route('invitation')}}" name="invitation_link" class="btn btn-primary">Send Invitation</a>
+                            </div>
                         @endif
                     </div>
                 </div>

@@ -7,7 +7,7 @@ use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Laravel\Cashier\Billable;
 
-class User extends Authenticatable
+class User extends Authenticatable implements MustVerifyEmail
 {
     use Billable;
     use Notifiable;
@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'name', 'email', 'password','referral_link','referred_by',
     ];
 
     /**
@@ -57,8 +57,22 @@ class User extends Authenticatable
             ->first();
     }
 
+    /**
+     * @return mixed
+     */
     public function isAdmin()
     {
         return $this->is_admin;
     }
+
+    public function parent()
+    {
+        return $this->belongsTo('App\User', 'referred_by');
+    }
+
+    public function children()
+    {
+        return $this->hasMany('App\User', 'referred_by');
+    }
+
 }
