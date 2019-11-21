@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="addded return statement in the function">
+    <list default="true" id="3e0fe693-4a24-448c-90c3-efb1e04e0a37" name="Default Changelist" comment="- added new section to display referred users">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/invitation/sendinvitation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/invitation/sendinvitation.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -157,7 +157,8 @@
       <workItem from="1574155050432" duration="17910000" />
       <workItem from="1574177321014" duration="4834000" />
       <workItem from="1574242228144" duration="15381000" />
-      <workItem from="1574310418748" duration="1864000" />
+      <workItem from="1574310418748" duration="1918000" />
+      <workItem from="1574324129637" duration="818000" />
     </task>
     <task id="LOCAL-00001" summary="Updated migrations a redirected user to home when subscritpion is created">
       <created>1574167737784</created>
@@ -222,11 +223,28 @@
       <option name="project" value="LOCAL" />
       <updated>1574180992236</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="- added new section to display referred users">
+      <created>1574312316354</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1574312316354</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -251,6 +269,7 @@
     <MESSAGE value="Fixed query for middleware" />
     <MESSAGE value="addded return statement in the function" />
     <MESSAGE value="Refactored the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored the code" />
+    <MESSAGE value="- added new section to display referred users" />
+    <option name="LAST_COMMIT_MESSAGE" value="- added new section to display referred users" />
   </component>
 </project>

@@ -51,10 +51,10 @@
                         <hr>
                         <div class="col-md-12">
                             <div class="row">
-                                <div class="col-md-6">
-                                    <h4>Total Users refered by {{auth()->user()->name}}</h4>
+                                <div class="col-md-8">
+                                    <h4>Users Referred by {{auth()->user()->name}}</h4>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <h3 style="float: right">{{count(auth()->user()->children)}}</h3>
                                 </div>
                             </div>
