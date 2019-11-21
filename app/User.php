@@ -67,12 +67,12 @@ class User extends Authenticatable implements MustVerifyEmail
 
     public function parent()
     {
-        return $this->belongsTo('App\User', 'referred_by');
+        $this->belongsTo(self::class, 'referred_by');
     }
 
     public function children()
     {
-        return $this->hasMany('App\User', 'referred_by');
+        return $this->hasMany(self::class, 'referred_by');
     }
 
 }

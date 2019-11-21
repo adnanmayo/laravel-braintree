@@ -22,8 +22,8 @@
                             </div>
                             <div class="form-group">
                                 <label for="exampleInputPassword1">Message</label>
-                                <textarea  class="form-control"
-                                           placeholder="Type Your Message" name="message" rows="5"></textarea>
+                                <textarea class="form-control"
+                                          placeholder="Type Your Message" name="message" rows="5"></textarea>
                             </div>
                         </div>
                         <div class="modal-footer">
@@ -57,6 +57,28 @@
                                 <div class="col-md-6">
                                     <h3 style="float: right">{{count(auth()->user()->children)}}</h3>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="row">
+                                <table class="table table-hover">
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    @foreach(auth()->user()->children as $key=>$value)
+                                        <tr>
+                                            <th scope="row">{{$key + 1}}</th>
+                                            <td>{{$value->name}}</td>
+                                            <td>{{$value->email}}</td>
+                                        </tr>
+                                    @endforeach
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
