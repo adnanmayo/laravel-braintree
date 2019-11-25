@@ -36,7 +36,6 @@ Auth::routes();
 
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('subscribed');
-Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('subscriptions/create', 'SubscriptionController@create')->name('subscription.create')->middleware('auth');
 Route::post('subscriptions/cancel', 'SubscriptionController@cancel')->name('subscription.cancel')->middleware('auth');
